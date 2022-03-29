@@ -18,6 +18,10 @@ import os
 class Dev(Configuration):
     OMDB_KEY = "238b6242"
 
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    ADMINS = [("Ben", "ben@example.com")]
+
+
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
